@@ -6,8 +6,7 @@ let speed;
 function setup() {
     createCanvas(1200, 1000);
     shape1 = new Shape();
-    speed = random(1, 5);
-   
+    speed = random(1, 5);   
 }
 
 function draw() {
@@ -52,7 +51,6 @@ class Shape {
     }
     move() {
         this.x = this.x += speed;
-     
     }
 
     show() {
