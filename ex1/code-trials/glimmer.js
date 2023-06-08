@@ -1,13 +1,21 @@
-let shape1;
+let x = 50;
+let y = 200;
 let speed;
 
 
 
 function setup() {
     createCanvas(1200, 1000);
-    shape1 = new Shape();
-    speed = random(2, 5);   
 }
+
+function makeCircle() {
+    noStroke();
+    fill("#12eff7");
+    ellipse(x, y, 100, 100);
+
+    x = x + random(-1, 5);
+    y = y + random(-10, 10);
+;} 
 
 function draw() {
     background(0);
@@ -24,8 +32,7 @@ function draw() {
     fill(0);
     rect(900, 0, 100, 1000);  //rect 10
 
-    shape1.move();
-    shape1.show();
+    makeCircle();
 
     noStroke();
     fill(0);
@@ -43,21 +50,3 @@ function draw() {
     fill(0);
     rect(1000, 0, 100, 1000);  //rect 11
 }
-
-class Shape {
-    constructor() {
-        this.x = 150;
-        this.y = 300;  
-    }
-    move() {
-        this.x = this.x += speed;
-    }
-
-    show() {
-        stroke("#12eff7");
-        strokeWeight(5);
-        noFill();
-        ellipse(this.x, this.y, 100, 100);
-        
-    }
-}    
