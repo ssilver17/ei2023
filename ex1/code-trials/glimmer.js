@@ -6,29 +6,29 @@ let speed;
 function setup() {
     createCanvas(1200, 1000);
     shape1 = new Shape();
-    speed = random(1, 5);   
+    speed = random(2, 5);   
 }
 
 function draw() {
-    background("#15414e");
+    background(0);
 
     noStroke();
-    fill(220);
+    fill(0);
     rect(400, 0, 100, 1000);  //rect 5
 
     noStroke();
-    fill(220);
+    fill(0);
     rect(600, 0, 100, 1000);  //rect 7
 
     noStroke();
-    fill(220);
+    fill(0);
     rect(900, 0, 100, 1000);  //rect 10
 
     shape1.move();
     shape1.show();
 
     noStroke();
-    fill(220);
+    fill(0);
     rect(0, 0, 100, 1000); //rect 1
 
     noStroke();
