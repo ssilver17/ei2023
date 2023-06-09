@@ -5,8 +5,8 @@ var y;
 
 function setup() {
     createCanvas(1200, 1000);
-    x = 100;
-    y = 100;
+    x = 200;
+    y = 200;
     
 }
 

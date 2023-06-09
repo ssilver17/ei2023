@@ -13,16 +13,12 @@ function makeCircle() {
     fill("#12eff7");
     ellipse(x, y, 100, 100);
 
-    x = x + random(-1, 5);
-    y = y + random(-10, 10);
-;} 
+    x = x + random(5);
+    y = y + random(5);
+} 
 
 function draw() {
     background(0);
-
-    noStroke();
-    fill(0);
-    rect(400, 0, 100, 1000);  //rect 5
 
     noStroke();
     fill(0);
@@ -41,6 +37,11 @@ function draw() {
     noStroke();
     fill(0);
     rect(200, 0, 100, 1000);  //rect 3
+
+    noStroke();
+    fill(0);
+    rect(400, 0, 100, 1000);  //rect 5
+    
 
     noStroke();
     fill(0);
